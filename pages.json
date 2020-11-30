@@ -1,0 +1,419 @@
+{
+    "easycom": {
+            "autoscan": true,
+    		"^u-(.*)": "@/components/uview-ui/components/u-$1/u-$1.vue",
+            "tui-(.*)": "@/components/thorui/tui-$1/tui-$1.vue"
+    },
+	"pages": [
+        {
+            "path": "pages/index/index",
+            "style": {
+                "navigationBarTitleText": "控制台",
+                "app-plus":{
+                    "bounce":"none",
+                    "titleNView":{
+                    }
+                }
+            }
+        },
+        {
+            "path": "pages/building",
+            "style": {
+                "navigationBarTitleText": "页面正在建设中"
+            }
+        }
+    ],
+    "subPackages": [
+        {
+            "root": "pages/supplier",
+            "pages": [
+                {
+                    "path":"supplierList",
+                    "style":{
+                        "navigationBarTitleText":"供货商列表",
+                        "app-plus":{
+                            "titleNView":{
+                                "buttons":[
+                                    {
+                                        "text": "\ue6ad",
+                                        "fontSrc": "/static/jfadmin.ttf",
+                                        "fontSize": "22px",
+                                        "color": "#000000"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "path":"supplierAdd",
+                    "style":{
+                        "navigationBarTitleText":"新增供货商"
+                    }
+                },
+                {
+                    "path":"supplierSubmenu",
+                    "style":{
+                        "navigationBarTitleText":"供货商子菜单"
+                    }
+                },
+                {
+                   "path":"supplierBankAccount/supplierBankAccountList" ,
+                   "style":{
+                       "navigationBarTitleText":"供货商开户行列表",
+                       "app-plus":{
+                           "titleNView":{
+                               "buttons":[
+                                   {
+                                       "text": "\ue6ad",
+                                       "fontSrc": "/static/jfadmin.ttf",
+                                       "fontSize": "22px",
+                                       "color": "#000000"
+                                   }
+                               ]
+                           }
+                       }
+                   }
+                },
+                {
+                   "path":"supplierBankAccount/supplierBankAccountAdd" ,
+                   "style":{
+                       "navigationBarTitleText":"添加银行账号"
+                   }
+                },
+                {
+                    "path":"supplierClerk/supplierClerkList" ,
+                    "style":{
+                        "navigationBarTitleText":"供货商职员列表",
+                        "app-plus":{
+                            "titleNView":{
+                                "buttons":[
+                                    {
+                                        "text": "\ue6ad",
+                                        "fontSrc": "/static/jfadmin.ttf",
+                                        "fontSize": "22px",
+                                        "color": "#000000"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "path":"supplierClerk/supplierClerkADD" ,
+                    "style":{
+                        "navigationBarTitleText":"供货商新增职员"
+                    }
+                },
+                {
+                    "path":"supplierClerk/supplierClerkSetup" ,
+                    "style":{
+                        "navigationBarTitleText":"供货商职员设置"
+                    }
+                },
+                {
+                    "path":"supplierProd/supplierProdList" ,
+                    "style":{
+                        "navigationBarTitleText":"供货商产品列表",
+                        "app-plus":{
+                            "titleNView":{
+                                "buttons":[
+                                    {
+                                        "text": "\ue6ad",
+                                        "fontSrc": "/static/jfadmin.ttf",
+                                        "fontSize": "22px",
+                                        "color": "#000000"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "path":"supplierProd/supplierProdSubmenu" ,
+                    "style":{
+                        "navigationBarTitleText":"供货商产品子菜单"
+                    }
+                },
+                {
+                    "path":"supplierProd/supplierProdAdd" ,
+                    "style":{
+                        "navigationBarTitleText":"新增供货商产品"
+                    }
+                },
+                {
+                    "path":"supplierProd/ProdInfo/ProdInfo" ,
+                    "style":{
+                        "navigationBarTitleText":"产品基础资料"
+                    }
+                },
+                {
+                    "path":"supplierProd/ProdPrice/ProdPrice" ,
+                    "style":{
+                        "navigationBarTitleText":"产品售价设置"
+                    }
+                },
+                {
+                    "path":"supplierProd/ProdSetup/ProdSetup" ,
+                    "style":{
+                        "navigationBarTitleText":"产品开关选项"
+                    }
+                },
+                {
+                    "path":"supplierInfo/supplierInfo" ,
+                    "style":{
+                        "navigationBarTitleText":"供货商开户行列表"
+                        
+                    }
+                },
+                {
+                    "path":"supplierSetup/supplierSetup" ,
+                    "style":{
+                        "navigationBarTitleText":"供货商设置"
+                    }
+                }
+            ]
+        },
+        {
+            "root": "pages/distributor",
+            "pages": [
+                {
+                    "path": "distributorList",
+                    "style": {
+                        "navigationBarTitleText":"分销商列表",
+                        "app-plus":{
+                            "titleNView":{
+                                "buttons":[
+                                    {
+                                        "text": "\ue6ad",
+                                        "fontSrc": "/static/jfadmin.ttf",
+                                        "fontSize": "22px",
+                                        "color": "#000000"
+                                    },
+                                    {
+                                        "text": "\ue634",
+                                        "fontSrc": "/static/jfadmin.ttf",
+                                        "fontSize": "23px",
+                                        "color": "#000000"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "path": "distributorAdd",
+                    "style": {
+                         "navigationBarTitleText":"新增分销商"
+                    }
+                },
+                {
+                    "path": "distributorSubmenu",
+                    "style": {
+                         "navigationBarTitleText":"分销商子菜单"
+                    }
+                },
+                {
+                    "path": "submenu/distcoordinate",
+                    "style": {
+                         "navigationBarTitleText":"分销商位置设置"
+                    }
+                },
+                {
+                    "path": "submenu/distReportsSale",
+                    "style": {
+                         "navigationBarTitleText":"分销商销售报表"
+                    }
+                },
+                {
+                    "path": "submenu/distReportsAccounting",
+                    "style": {
+                         "navigationBarTitleText":"分销商账务报表",
+                         "app-plus":{
+                             "titleNView":{
+                                 "buttons":[
+                                     {
+                                         "text": "\ue6ad",
+                                         "fontSrc": "/static/jfadmin.ttf",
+                                         "fontSize": "22px",
+                                         "color": "#000000"
+                                     }
+                                 ]
+                             }
+                         }
+                    }
+                },
+                {
+                    "path": "submenu/distSetProd",
+                    "style": {
+                         "navigationBarTitleText":"分销商产品设置"
+                    }
+                },
+                {
+                    "path": "submenu/distSetIs",
+                    "style": {
+                         "navigationBarTitleText":"分销商开关设置"
+                    }
+                },
+                {
+                    "path": "submenu/distUsageRecord",
+                    "style": {
+                         "navigationBarTitleText":"分销商操作记录"
+                    }
+                }
+            ]
+        },
+        {
+            "root": "pages/shop",
+            "pages": [
+                {
+                    "path": "shopList",
+                    "style": {
+                         "navigationBarTitleText":"店铺列表",
+                         "app-plus":{
+                             "titleNView":{
+                                 "buttons":[
+                                     {
+                                         "text": "\ue6ad",
+                                         "fontSrc": "/static/jfadmin.ttf",
+                                         "fontSize": "22px",
+                                         "color": "#000000"
+                                     }
+                                 ]
+                             }
+                         }
+                    }
+                },
+                {
+                    "path": "shopAdd",
+                    "style": {
+                         "navigationBarTitleText":"新增店铺"
+                    }
+                },
+                {
+                    "path": "shopsubmenu",
+                    "style": {
+                         "navigationBarTitleText":"店铺设置菜单"
+                    }
+                },
+                {
+                    "path": "shopset/SetStaff",
+                    "style": {
+                         "navigationBarTitleText":"店铺-员工设置"
+                    }
+                },
+                {
+                    "path": "shopset/SetProds",
+                    "style": {
+                         "navigationBarTitleText":"店铺-产品设置"
+                    }
+                },
+                {
+                    "path": "shopset/SetLicense",
+                    "style": {
+                         "navigationBarTitleText":"店铺-证件"
+                    }
+                }
+            ]
+        },
+        {
+            "root": "pages/staff",
+            "pages": [
+                {
+                    "path": "staffList",
+                    "style": {
+                         "navigationBarTitleText":"员工列表",
+                         "app-plus":{
+                             "titleNView":{
+                                 "buttons":[
+                                     {
+                                         "text": "\ue6ad",
+                                         "fontSrc": "/static/jfadmin.ttf",
+                                         "fontSize": "22px",
+                                         "color": "#000000"
+                                     }
+                                 ]
+                             }
+                         }
+                    }
+                },
+                {
+                    "path": "staffAdd",
+                    "style": {
+                         "navigationBarTitleText":"新增员工"
+                    }
+                },
+                {
+                    "path": "staffEdit",
+                    "style": {
+                         "navigationBarTitleText":"编辑员工资料"
+                    }
+                }
+            ]
+        },
+        {
+            "root": "pages/demonstration",
+            "pages": [
+                {
+                    "path": "demonstrationList",
+                    "style": {
+                         "navigationBarTitleText":"示范田"
+                    }
+                },
+                {
+                    "path": "syt_admin",
+                    "style": {
+                         "navigationBarTitleText":"管理示范田"
+                    }
+                },
+                {
+                    "path": "modelfielddetail",
+                    "style": {
+                         "navigationBarTitleText":"产品详情",
+                         "app-plus":{
+                             "titleNView":{
+                                 "buttons":[
+                                     {
+                                         "text": "\ue6ad",
+                                         "fontSrc": "/static/jfadmin.ttf",
+                                         "fontSize": "22px",
+                                         "color": "#000000"
+                                     }
+                                 ]
+                             }
+                         }
+                    }
+                },
+                {
+                    "path": "syt_admin_addnew",
+                    "style": {
+                         "navigationBarTitleText":"新增示范产品"
+                    }
+                }
+            ]
+        },
+        {
+            "root": "pages/Report",
+            "pages": [
+                {
+                    "path": "ReportSales",
+                    "style": {
+                         "navigationBarTitleText":"销售报表"
+                    }
+                },
+                {
+                    "path": "ReportFinancial",
+                    "style": {
+                         "navigationBarTitleText":"财务报表"
+                    }
+                }
+            ]
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "佳丰种业",
+		"navigationBarBackgroundColor": "#FFFFFE",
+		"backgroundColor": "#FFFFFE"
+	}
+}
